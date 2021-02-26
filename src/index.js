@@ -5,7 +5,7 @@ import { ChannelSigner } from "@connext/vector-utils";
 
 // session monster economy alley thumb fun critic view quit wonder sound soldier
 
-async function run() {
+window.run = async function run() {
   const pk =
     "0x2df591b7552895e90b6cd24cfde781c59e1afe38fc529399421cbd977db602fa";
   const signer = new ChannelSigner(pk);
@@ -31,7 +31,6 @@ async function run() {
   });
   console.log("setup: ", setup.isError ? setup.getError() : setup.getValue());
 }
-run();
 
 ReactDOM.render(
   <React.StrictMode></React.StrictMode>,
